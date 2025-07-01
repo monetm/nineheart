@@ -1,0 +1,71 @@
+/* === Base Typography === */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdf8f2;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #3e1209;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* === Buttons & Links === */
+.btn-outline-dark {
+  border-color: #3e1209;
+  color: #3e1209;
+}
+
+.btn-outline-dark:hover {
+  background-color: #3e1209;
+  color: #fff;
+}
+
+a {
+  color: #3e1209;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Section Spacing === */
+section {
+  padding: 4rem 0;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+  padding: 2rem;
+  background-color: #fdf8f2;
+  border-top: 1px solid #eaeaea;
+}
+
+/* === Responsive Image Sizing === */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Utilities === */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
