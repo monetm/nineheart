@@ -45,6 +45,27 @@ section {
   padding: 4rem 0;
 }
 
+/* === Header === */
+header {
+  background-color: #fdf8f2;
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+}
+
+header .logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3e1209;
+  margin-bottom: 1rem;
+}
+
+header nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
 /* === Footer === */
 footer {
   text-align: center;
