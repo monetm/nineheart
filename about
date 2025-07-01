@@ -1,0 +1,34 @@
+<!-- ABOUT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Nineheart Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold serif">Our Story</h1>
+      <p class="lead">Nineheart Studio was born from a love of storytelling, design, and thoughtful brand expression. We work with visionary founders who lead with style, soul, and purpose.</p>
+    </div>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="fw-semibold serif">Studio Ethos</h2>
+          <p>We believe that beautiful things do more than just look good — they communicate values. At Nineheart, we create with intention and strategy, merging timeless aesthetics with modern relevance.</p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-semibold serif">Founder Philosophy</h2>
+          <p>Founded by a creative strategist with a background in marketing, art history, and sustainability, Nineheart blends intuition and analysis to help brands blossom in today’s saturated world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
