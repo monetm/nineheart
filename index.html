@@ -1,149 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nineheart Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --cream: #fdf8f2;
-      --text: #1a1a1a;
-      --accent: #3e1209;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--cream);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      padding: 0;
-      margin: 0;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background-color: var(--cream);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .hero {
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 2rem;
-    }
-
-    .hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      padding: 2rem;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">nineheart studio</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Creative direction with heart.</h1>
-    <p>
-      Nineheart Studio crafts thoughtful branding and digital storytelling for the fashion-forward, the soulful, and the socially conscious.
-    </p>
+  <section class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold serif">Creative direction with heart.</h1>
+      <p class="lead">Nineheart Studio crafts thoughtful branding and digital storytelling for the fashion-forward, the soulful, and the socially conscious.</p>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      With an eye for detail and a heart for narrative, Nineheart Studio bridges strategic vision with artistic flair. Our work celebrates the intersection of style, sustainability, and story.
-    </p>
-  </section>
-
-  <section id="services">
-    <h2>Services</h2>
-    <p>
-      We offer branding, social media strategy, digital marketing, and visual storytelling tailored to conscious and creative brands. Whether you’re launching a new venture or revitalizing an existing one, we’ll guide the journey.
-    </p>
-  </section>
-
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>
-      Selected works coming soon. In the meantime, reach out to see case studies and project examples.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Interested in working together? Send us a note at <a href="mailto:hello@nineheart.studio">hello@nineheart.studio</a>
-    </p>
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <a href="about.html" class="btn btn-outline-dark m-2">About</a>
+      <a href="services.html" class="btn btn-outline-dark m-2">Services</a>
+      <a href="portfolio.html" class="btn btn-outline-dark m-2">Portfolio</a>
+      <a href="contact.html" class="btn btn-outline-dark m-2">Contact</a>
+    </div>
   </section>
 
   <footer>
     &copy; 2025 Nineheart Studio. All rights reserved.
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
