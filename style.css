@@ -1,92 +1,127 @@
-/* === Base Typography === */
+/* === FONT IMPORTS === */
+@import url('https://fonts.googleapis.com/css2?family=Cooper+Hewitt&family=Pinyon+Script&family=Cardo:wght@400;700&family=Playfair+Display+SC:wght@400;700&display=swap');
+
+/* === ROOT VARIABLES === */
+:root {
+  /* Colors */
+  --butter: #FFFDF1;
+  --ivory: #E9D5BA;
+  --mocha: #806D64;
+  --chocolate: #36231C;
+  --blackberry: #08090A;
+
+  --plum1: #A62D2D;
+  --plum2: #B298B4;
+  --plum3: #996376;
+  --plum4: #523640;
+
+  --olive1: #918434;
+  --olive2: #CDC333;
+
+  /* Fonts */
+  --font-accent: 'Cooper Hewitt', sans-serif;
+  --font-header: 'Pinyon Script', cursive;
+  --font-subheader: 'Playfair Display SC', serif;
+  --font-body: 'Cardo', serif;
+}
+
+/* === FADE-UP ANIMATION === */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === TYPOGRAPHY CLASSES === */
+.accent {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--blackberry);
+  animation: fadeUp 1.2s ease-out both;
+}
+
+.header {
+  font-family: var(--font-header);
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: var(--chocolate);
+  line-height: 1.4;
+  animation: fadeUp 1.4s ease-out both;
+}
+
+.subheader {
+  font-family: var(--font-subheader);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--blackberry);
+  animation: fadeUp 1.3s ease-out both;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--mocha);
+  animation: fadeUp 1.5s ease-out both;
+}
+
+/* === GLOBAL BODY === */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #fdf8f2;
-  color: #1a1a1a;
+  background-color: var(--blackberry);
+  color: var(--butter);
+  font-family: var(--font-body);
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-.serif {
-  font-family: 'Cormorant Garamond', serif;
+/* === BUTTONS === */
+.button-primary {
+  background-color: var(--plum1);
+  color: var(--butter);
+  font-family: var(--font-accent);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-h1, h2, h3, h4, h5 {
-  color: #3e1209;
+.button-primary:hover {
+  background-color: var(--plum4);
+  transform: scale(1.03);
 }
 
-p {
-  margin-bottom: 1.25rem;
+.button-secondary {
+  background-color: var(--olive2);
+  color: var(--blackberry);
+  font-family: var(--font-accent);
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* === Buttons & Links === */
-.btn-outline-dark {
-  border-color: #3e1209;
-  color: #3e1209;
+.button-secondary:hover {
+  background-color: var(--olive1);
+  transform: scale(1.03);
 }
 
-.btn-outline-dark:hover {
-  background-color: #3e1209;
-  color: #fff;
-}
-
-a {
-  color: #3e1209;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* === Section Spacing === */
-section {
-  padding: 4rem 0;
-}
-
-/* === Header === */
-header {
-  background-color: #fdf8f2;
-  padding: 2rem 0 1rem;
-  border-bottom: 1px solid #eaeaea;
-  text-align: center;
-}
-
-header .logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #3e1209;
-  margin-bottom: 1rem;
-}
-
-header nav a {
-  margin: 0 1rem;
-  font-weight: 500;
-}
-
-/* === Footer === */
-footer {
-  text-align: center;
-  font-size: 0.875rem;
-  color: #777;
-  padding: 2rem;
-  background-color: #fdf8f2;
-  border-top: 1px solid #eaeaea;
-}
-
-/* === Responsive Image Sizing === */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* === Utilities === */
-.bg-light {
-  background-color: #f8f9fa !important;
-}
-
-.text-center {
-  text-align: center !important;
+/* === EMBROIDERED LOGO === */
+.logo {
+  background-image: url('/path-to/embroidered-logo.png'); /* replace with actual path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
 }
