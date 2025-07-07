@@ -1,0 +1,105 @@
+/* === FONT IMPORT === handled in index.html === */
+
+:root {
+  /* Colors */
+  --butter: #FFFDF1;
+  --ivory: #E9D5BA;
+  --mocha: #806D64;
+  --chocolate: #36231C;
+  --blackberry: #08090A;
+
+  --plum1: #A62D2D;
+  --plum4: #523640;
+  --olive2: #CDC333;
+
+  /* Fonts */
+  --font-accent: 'Cooper Hewitt', sans-serif;
+  --font-header: 'Pinyon Script', cursive;
+  --font-subheader: 'Playfair Display SC', serif;
+  --font-body: 'Cardo', serif;
+}
+
+/* === FADE-UP === */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === BASE STYLES === */
+body {
+  background-color: var(--blackberry);
+  color: var(--butter);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+}
+
+h1.accent {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+h1 .studio {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  font-family: var(--font-accent);
+  color: var(--olive2);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--plum1);
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  animation: fadeUp 1.2s ease-out;
+}
+
+.header {
+  font-family: var(--font-header);
+  font-size: 2.5rem;
+  color: var(--butter);
+  margin-bottom: 1rem;
+  animation: fadeUp 1.3s ease-out;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--ivory);
+  animation: fadeUp 1.5s ease-out;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: var(--mocha);
+}
