@@ -119,7 +119,7 @@ body {
 
 /* === EMBROIDERED LOGO === */
 .logo {
-  background-image: url('/main/embroidered-logo.png'); /* replace with actual path */
+  background-image: url('embroidered-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
